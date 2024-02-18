@@ -71,11 +71,11 @@ public class Program
     private static readonly int Number3 = 3;
     private static readonly int Number4 = 4;
 
-    public int[] get1;
-    public int[] get2;
-    public int[] get3;
-    public int[] get4;
-    public int[] get5;
+    public int[] massiv1;
+    public int[] massiv2;
+    public int[] massiv3;
+    public int[] massiv4;
+    public int[] massiv5;
     
     public static void Main(string[] args)
     {
@@ -87,26 +87,26 @@ public class Program
 
     public void Fun1()
     {
-        get1 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        get2 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        get3 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        get4 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        get5 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        massiv1 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        massiv2 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        massiv3 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        massiv4 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        massiv5 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-        var run1 = get1[1];
-        var run2 = get1[2];
-        var run3 = get1[3];
-        var run4 = get1[4];
-        var run5 = get1[5];
+        var run1 = massiv1[1];
+        var run2 = massiv2[2];
+        var run3 = massiv3[3];
+        var run4 = massiv4[4];
+        var run5 = massiv5[5];
         
     }
 
     public void Fun2()
     {
-        get1[5] = 50;
-        get2[4] = 2;
-        Console.WriteLine($"{get1[5]}");
-        Console.WriteLine($"{get2[4]}");
+        massiv1[5] = 50;
+        massiv2[4] = 2;
+        Console.WriteLine($"{massiv1[5]}");
+        Console.WriteLine($"{massiv2[4]}");
     }
 }
 
