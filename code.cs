@@ -62,30 +62,36 @@ class Program
 
 //=============================================================================//
 
-using System;
+namespace ConsoleApp1;
 
-class Program
+public class Program
 {
     private static readonly int Number1 = 1;
     private static readonly int Number2 = 2;
     private static readonly int Number3 = 3;
     private static readonly int Number4 = 4;
+
+    public int[] get1;
+    public int[] get2;
+    public int[] get3;
+    public int[] get4;
+    public int[] get5;
     
     public static void Main(string[] args)
     {
         Program program = new Program();
-        program.Fun_1();
-        program.Fun_2();
+        program.Fun1();
+        program.Fun2();
         
     }
 
-    private void Fun_1()
+    public void Fun1()
     {
-        int[] get1 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        int[] get2 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        int[] get3 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        int[] get4 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        int[] get5 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        get1 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        get2 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        get3 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        get4 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        get5 = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
         var run1 = get1[1];
         var run2 = get1[2];
@@ -95,9 +101,12 @@ class Program
         
     }
 
-    private void Fun_2()
+    public void Fun2()
     {
-        
+        get1[5] = 50;
+        get2[4] = 2;
+        Console.WriteLine($"{get1[5]}");
+        Console.WriteLine($"{get2[4]}");
     }
 }
 
